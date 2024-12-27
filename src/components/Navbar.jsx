@@ -1,5 +1,6 @@
 import SpotifyWhite from "../assets/Spotify_White.png";
 import { NavLink } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Navbar = () => {
   return (
@@ -12,6 +13,8 @@ const Navbar = () => {
       </NavLink>
 
       <div className="flex flex-row items-center">
+        <DarkModeToggle></DarkModeToggle>
+        <a className="mx-4 font-semibold">|</a>
         <a className="mx-4 font-semibold">Premium</a>
         <a className="mx-4 font-semibold">Support</a>
         <a className="mx-4 font-semibold">Download</a>
